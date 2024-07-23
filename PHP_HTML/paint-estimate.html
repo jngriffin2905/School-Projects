@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!--	Author:Jessica Griffin
-		Date:02/04/2024
-		File:	king-painting.html
-		Purpose: Chapter 4 Exercise
+<!--	Author:
+		Date:
+		File:	paint-estimate.html
+		Purpose:
 -->
 
 <html>
@@ -12,29 +12,25 @@
 </head>
 
 <body>
-	<h1>Paint Estimate</h1>
-	<form action = "paint-estimate.php" method = "post">
+<h1>King Painting</h1>
+<p>Use this form to obtain a quick estimate of the cost to paint a room</p>
 
-		<label> Length of the room in feet?
-		<input type = "text" size = "3" name = "answer1">
+<p>
+	<form action = "paint-estimate.php" method = "post" >
+
+		<label>Room length in feet:
+            <input type = "text" size = "5" name = "roomLength">
 		</label>
 
+		<label>Room width in feet:
+            <input type = "text" size = "5" name = "room_Width">
+		</label>
 
- 	 	<label> Width of the room in feet?
-	 	<input type = "text" size = "3" name = "answer2">
-	 	</label>
-
-	 	<label> Height of the room in feet?
-	 	<input type = "text" size = "3" name = "answer3">
-	 	</label>
-	 	
-		<label>
-	 	<input class = "Submit" type = "submit" value = "submit the numbers" 
-		</label> 
-	
-	
-	</form>
-	
+		<label>Room height in feet:
+            <input type = "text" size = "5" name = "room Height">
+		</label>
 		
+		<input class="submit" type = "submit" value = "Display Estimated Cost">
+	</form>
 </body>
 </html>

@@ -1,51 +1,64 @@
-<!DOCTYPE html>
-<!--	Author:Jessica Griffin
-		Date:02/04/2024
+<!--	Author:
+		Date:
 		File:	game-intro.html
-		Purpose:Chapter 4 Exercise
+		Purpose:
 -->
 
 <html>
 <head>
-	<title>gameIntro</title>
+	<title>game-intro</title>
 	<link rel ="stylesheet" type="text/css" href="sample.css">
 </head>
 
 <body>
 	<h1>Character Creation</h1>
 	<p><strong>YOU HAVE 10 GOLD PIECES</strong></p>
-	<p>	1 gold piece buys 10 health tokens<br>
+	<p>1 gold piece buys 10 health tokens<br>
 		1 gold piece buys 2 experience tokens<br>
-		1 gold piece buys 25 supply tokens<br>
-	</p>
+		1 gold piece buys 25 supply tokens</p>
+
+	<form action = "game-intro.php" method = "post" >
+
+	<label>Enter your character's name:
+        <input type = "text" size = "20" name = "charName"></label>
+
+    <label>Select your character's type: 
+        <select name = "charType">
+		<option>dwarf</option>
+		<option>elf</option>
+		<option>human</option>
+		<option>wizard</option>			
+		</select></label>
+
+    <label>Purchase health tokens
+        <select name = "healthTokens">
+		<option>0</option>
+		<option>10</option>
+		<option>20</option>
+		<option>30</option>			
+		</select></label>
+
+	<label>Purchase experience tokens
+        <select name = "expTokens">
+		<option>0</option>
+		<option>2</option>
+		<option>4</option>
+		<option>6</option>			
+		<option>8</option>
+		<option>10</option>
+		</select></label>
+    
+    <label>Purchase supply tokens
+        <select name = "supplyTokens">
+		<option>0</option>
+		<option>25</option>
+		<option>50</option>
+		<option>75</option>			
+		<option>100</option>
+		</select></label>
+		
+	<input class = "submit" type = "submit" value = "CREATE CHARACTER">
 	
-	<form action = "game-intro.php" method = "post">
-
-		<label> Character name? 
-		<input type = "text" size = "15" name = "charname">
-		</label>
-
-		<label> Character type?
-		<input type = "text" size = "15" name = "chartype">
-		</label>
-
-		<label> Experience tokens to purchase? 
-		<input type = "text" size = "5" name = "extokens">
-		</label>
-
-		<label> Health tokens to purchase? 
-		<input type = "text" size = "5" name = "healthtokens">
-		</label>
-
-		<label> Supply tokens to purchase? 
-		<input type = "text" size = "5" name = "supplytokens">
-		</label>
-
-		<label> 
-		<input class = "submit" type = "submit" value = "Submit">
-		</label>
-	
-	</form>
-
+</form>
 </body>
 </html>

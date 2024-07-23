@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!--	Author: Jessica Griffin
-		Date:02/04/2024
+<!--	Author:
+		Date:
 		File:	travel.html
-		Purpose: Chapter 4 Exercise
+		Purpose: Chapter 5 Exercise
 -->
 
 <html>
@@ -12,24 +12,16 @@
 </head>
 
 <body>
-	<h1>Rome</h1>
-	
-	<form action = "travel.php" method = "post">
-		
-		<label> Number of people traveling?
-		<input type = "text" size = "5" name = "numpeople">
-		</label>
+	<h1>Travel to Rome Reservation Form</h1>	
+	<p>
+	<form action = "travel.php" method = "post" >
 
-		<label>Number of nights?
-		<input type = "text" size = "5" name = "numnights">
-	    </label>
-
-		<label> 
-		<input class = "submit" type = "submit" value = "submit the numbers" 
-		</label>
-
+		<label>How many people are traveling?
+            <input type = "text" size = "5" name = "numTravelers"></label>
+		<label>How many nights will you be staying?
+            <input type = "text" size = "5" name = "numNights"></label>
+            
+		<input class="submit" type = "submit" value = "Submit Your Reservation">
 	</form>
-
-
 </body>
 </html>

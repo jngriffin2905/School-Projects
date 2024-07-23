@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--	Author:Jessica Griffin
+		Date:02/04/2024
+		File:	game-intro.html
+		Purpose:Chapter 4 Exercise
+-->
+
+<html>
+<head>
+	<title>gameIntro</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+
+<body>
+	<h1>Character Creation</h1>
+	<p><strong>YOU HAVE 10 GOLD PIECES</strong></p>
+	<p>	1 gold piece buys 10 health tokens<br>
+		1 gold piece buys 2 experience tokens<br>
+		1 gold piece buys 25 supply tokens<br>
+	</p>
+	
+	<form action = "game-intro.php" method = "post">
+
+		<label> Character name? 
+		<input type = "text" size = "15" name = "charname">
+		</label>
+
+		<label> Character type?
+		<input type = "text" size = "15" name = "chartype">
+		</label>
+
+		<label> Experience tokens to purchase? 
+		<input type = "text" size = "5" name = "extokens">
+		</label>
+
+		<label> Health tokens to purchase? 
+		<input type = "text" size = "5" name = "healthtokens">
+		</label>
+
+		<label> Supply tokens to purchase? 
+		<input type = "text" size = "5" name = "supplytokens">
+		</label>
+
+		<label> 
+		<input class = "submit" type = "submit" value = "Submit">
+		</label>
+	
+	</form>
+
+</body>
+</html>

@@ -19,18 +19,27 @@
 	<form action = "paint-estimate.php" method = "post" >
 
 		<label>Room length in feet:
-            <input type = "text" size = "5" name = "roomLength">
-		</label>
+            <input type = "text" size = "5" name = "roomLength"></label>
 
 		<label>Room width in feet:
-            <input type = "text" size = "5" name = "room_Width">
-		</label>
+		<input type = "text" size = "5" name = "roomWidth"></label>
 
 		<label>Room height in feet:
-            <input type = "text" size = "5" name = "room Height">
-		</label>
-		
-		<input class="submit" type = "submit" value = "Display Estimated Cost">
+		<input type = "text" size = "5" name = "roomHeight"></label>
+
+		<label>Select paint quality:
+            <select name = "paint">
+			<option>premium</option>
+			<option>regular</option>
+            </select></label>
+
+		<label>Are you a first time customer?
+            <select name = "firstTime">
+			<option>yes</option>
+			<option>no</option>
+		</select></label>
+
+		<input class="submit" type = "submit" value = "Estimated Painting Cost">
 	</form>
 </body>
 </html>

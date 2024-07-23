@@ -1,0 +1,32 @@
+<!--	Author:
+		Date:
+		File:	ticketOrder2.html
+		Purpose: Exam exercise
+-->
+<html>
+<head>
+	<title>Performance</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css" />
+</head>
+
+<body>
+	<h1>The Asheville Music Club</h1>
+	<h2>Come see the CIS 115 Blues Band!</h2>
+	<p>MAXIMUM OF 10 TICKETS FOR EACH ORDER.</p>
+	<form action = "ticketOrder2.php" method = "post">
+	<table>
+	<tr><td>Number of tickets: </td>
+	<td><input type = "text" size = "12" name = "numTickets" /></td></tr>
+	<tr><td>Premium ($60) or Standard ($30)?</td>
+	<td><select name = "ticketType">
+	<option>PREMIUM</option>
+	<option>STANDARD</option>
+	</select></td></tr>
+	</table>
+	<p><input type = "submit" value = "Submit your ticket order" /></p>
+
+	</form>
+
+</body>
+</html>
+

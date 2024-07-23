@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--		Author: 	
+		Date:	        
+		File:		mileage-form.html
+		Purpose:	Mileage Form
+-->
+<html>
+<head>
+	<title>Mileage Form</title>
+	<link rel ="stylesheet" type="text/css" href="mileage.css">
+</head>
+<body>
+
+	<h1>Mileage Form</h1>
+	<form action = "mileage-form.php" method = "post" >
+            <table>      
+                 <tr><td>Enter the month:</td><td>
+				 <select name ="month">
+					<option>January</option>
+					<option>February</option>
+					<option>March</option>
+					<option>April</option>
+					<option>May</option>
+					<option>June</option>
+					<option>July</option>
+					<option>August</option>
+					<option>September</option>
+					<option>October</option>
+					<option>November</option>
+					<option>December</option>
+				
+				</select>
+                
+                <tr><td>How many days did you travel this month?</td><td> <input type = "text" size = "5" name = "days"></td></tr>
+		<tr><td>What was your total mileage?</td><td> <input type = "text" size = "5" name = "miles"></td></tr>
+		<tr><td>How many days did you travel more than 80 miles?</td><td>  <input type = "text" size = "5" name = "lunchDays"></td></tr>
+		<tr><td>How many nights did you stay in a hotel? </td><td> <input type = "text" size = "5" name = "nights"></td></tr>
+            </table>
+            <p><input type = "submit" value = "Submit for Reimbursement"></p>
+	</form>
+
+</body>
+</html>

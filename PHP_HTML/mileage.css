@@ -1,0 +1,16 @@
+body 	{ background: white
+          font-family:Arial, Helvetica, Sans-serif 
+        }
+
+h1 	{    font-size:24pt; color:blue; font-weight:bold;   }
+
+p	{    font-size:18pt; color:black;   }
+	 	
+strong  { color:blue; font-weight:bold; }
+
+p.alert	{ font-style:italic; color:red; }
+
+table, th, td	{ font-size:10pt; color:blue;border:1px solid blue;  }
+
+
+
